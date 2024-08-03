@@ -24,15 +24,22 @@ package main
 import "fmt"
 
 func main(){
+  type myInt int
+
+
+  const pi = 3.14159 // constant declaration
   var a int = 10
   var b int
-  c:= 20
+  c:= 20 // := is used to declare and initialize the variable
   d:= 3.14
   fmt.Println(a,b,c, d);
-
-
+  fmt.Println("phi : ", pi);
+  c = 30
   var x bool = true
   y:=false
-  fmt.Println(x,y);
+  fmt.Println(x,y, c);
+
+  fmt.Println(myInt(d));
+
 }
 
